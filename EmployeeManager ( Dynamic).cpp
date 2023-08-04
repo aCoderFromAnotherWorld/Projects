@@ -1,6 +1,6 @@
 #include <iostream>
 #include<iomanip>
-// #define MAX_SIZE 100
+
 using namespace std;
 
 //////////////////////// CLASS ////////////////////////
