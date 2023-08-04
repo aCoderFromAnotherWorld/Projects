@@ -1,5 +1,3 @@
-/*Submitted by - 2107100*/
-
 #include <iostream>
 #include<iomanip>
 // #define MAX_SIZE 100
