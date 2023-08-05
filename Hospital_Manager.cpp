@@ -18,10 +18,11 @@ class HospitalManager;
 int findIndex(HospitalManager &,int);
 void release(int);
 void resign(int);
+string getTime(string, int *,int *);
 void printDoc(vector<string>);
-void program();
 int isSubstring(string, string);
 vector<string> recomend(string);
+void program();
 
 //////////////// CLASS ////////////////
 
@@ -40,10 +41,11 @@ public:
 ///CLASS-02
 class Time
 {
-    int h,m;
+    int h, m;
+    string t;
 public:
     Time() {}
-    Time(int, int);
+    Time(int, int, string);
     Time operator-(Time &e)
     {
         Time t;
@@ -54,7 +56,6 @@ public:
         return t;
     }
     void display();
-    friend Doctor;
 };
 
 ///CLASS-03
@@ -254,19 +255,26 @@ void HospitalManager::addDoctor()
 {
     countDoc++;
     string name, speciality;
+    string time;
+    string t;
+    int h,m;
     cout<<"\n------------------------------\n";
     cin.ignore();
     cout<<"Enter Doctor Name    : ";
     getline(cin, name);
     cout<<"Doctor's Speciality  : ";
     cin>>speciality;
-    cout<<"Starting Time (H,M)   : ";
-    int h,m;
-    cin>>h>>m;
-    Time st(h,m);
-    cout<<"Ending Time (H,M)     : ";
-    cin>>h>>m;
-    Time en(h,m);
+    cout<<"Starting Time (H,M)  : ";
+    cin.ignore();
+    getline(cin, time);
+    t.clear();
+    t = getTime(time, &h, &m);
+    Time st(h,m, t);
+    cout<<"Ending Time (H,M)    : ";
+    getline(cin, time);
+    t.clear();
+    t = getTime(time, &h, &m);
+    Time en(h,m, t);
     Doctor d(countDoc, name, st, en, speciality);
     disease_map[speciality].push_back(name);
     doc.push_back(d);
@@ -311,15 +319,17 @@ void HospitalManager::displayPtn()
 }
 
 ///// Class Time --->
-Time::Time(int h, int m)
+Time::Time(int h, int m, string t)
 {
     this->h = h;
-    this->m =m;
+    this->m = m;
+    this->t = t;
 }
 
 void Time::display()
 {
-    cout<<h<<":"<<m;
+    cout<<h<<":"<<m <<" "<<t;
+    if(!t.empty())  cout<<"M";
 }
 
 //////////// FRIEND FUNCTION ///////////
@@ -422,13 +432,6 @@ void searchPatient(HospitalManager &obj, string name)
         cout<<"\nThere is no such Patient admitted\n";
 }
 
-int isSubstring(string s1, string s2)
-{
-    if (s2.find(s1) != string::npos)
-        return s2.find(s1);
-    return -1;
-}
-
 void printMap(HospitalManager &o, vector < string > v)
 {
     int flag = 0;
@@ -451,6 +454,46 @@ void printMap(HospitalManager &o, vector < string > v)
     }
     else
         cout<<"\nThere is no Doctor found!\n\n";
+
+}
+
+//////////// GENERAL FUNCTION ///////////
+int isSubstring(string s1, string s2)
+{
+    if (s2.find(s1) != string::npos)
+        return s2.find(s1);
+    return -1;
+}
+
+string getTime(string str, int *x,int *y)
+{
+    string t;
+    char *strn = (char *) str.c_str();
+    char s[] = ": ";
+    int flag = 0;
+
+    char *ptr = strtok(strn,s);
+    while(ptr!=NULL)
+    {
+        if(flag == 0){
+            *x = atoi(ptr);
+            flag++;
+        }
+        else if(flag == 1)
+        {
+            *y = atoi(ptr);
+            flag++;
+        }
+        else if(flag == 2)
+        {
+            t = *ptr;
+            for (auto & c: t) t = toupper(c);
+            flag++;
+        }
+        ptr = strtok(NULL, s);
+    }
+    delete ptr;
+    return t;
 }
 
 void program()
@@ -485,7 +528,7 @@ void program()
         {
             case 1:
                 hm.addDoctor();
-                cin.ignore();
+                // cin.ignore();
                 cout<<"\n\nDoctor is successfully added\n";
                 system("pause");
                 break;
@@ -560,6 +603,7 @@ void program()
     }while(command != 0);
 }
 
+//////////// MAIN FUNCTION ///////////
 int main()
 {
 label:
