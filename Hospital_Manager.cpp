@@ -49,6 +49,8 @@ public:
         Time t;
         t.h = h - e.h;
         t.m = m - e.m;
+        if(t.m<0) t.m+=60;
+        if(t.h<0) {t.h+=12;t.h--;}
         return t;
     }
     void display();
