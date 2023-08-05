@@ -137,7 +137,7 @@ bool Login::match(string p)
 void Login::change(string p)
 {
     this->pass = p;
-    cout<<"Password is successfully changed."<<endl;
+    cout<<"\nPassword is successfully changed."<<endl;
 }
 
 ///// Class Patient --->
@@ -557,9 +557,9 @@ void program()
                 break;
             case 6:
                 cout<<"Enter Name: ";
-                cin>>pass;
-                searchPatient(hm, pass);
                 cin.ignore();
+                getline(cin, pass);
+                searchPatient(hm, pass);
                 getchar();
                 break;
             case 7:
@@ -587,8 +587,9 @@ void program()
                     p.change(pass);
                 }
                 else{
-                    cout<<"You have entered wrong password!\n";
+                    cout<<"\nYou have entered wrong password!\n";
                 }
+                cin.ignore();
                 getchar();
                 break;
             case 0:
