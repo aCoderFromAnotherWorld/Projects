@@ -315,7 +315,7 @@ void HospitalManager::displayPtn()
         cout<<"\n"<<endl;
     }
     else
-        cout<<"There is no Doctor yet!\n";
+        cout<<"There is no Patient yet!\n";
 }
 
 ///// Class Time --->
