@@ -75,7 +75,7 @@ Additional helper functions are used for searching, recommending doctors, and ma
     ```bash
     ./hospital_manager
     ```
-4. Default login password is:\
+4. Default login password is:
    ```bash
    12345
    ```
@@ -95,7 +95,9 @@ Additional helper functions are used for searching, recommending doctors, and ma
 - Add billing and pharmacy management
 
 ---
+
 ## 👨‍💻 Author
-**MD. Abu Hasanat Soykot** 
+**MD. Abu Hasanat Soykot**
 Undergraduate CSE Student, KUET
+
 ---
