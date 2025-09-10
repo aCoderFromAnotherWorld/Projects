@@ -66,11 +66,12 @@ Additional helper functions are used for searching, recommending doctors, and ma
    ```bash
    git clone https://github.com/your-username/Hospital-Manager.git
    cd Hospital-Manager
-   ```
+  
 2. Compile the code:
     ```bash
     g++ hospital_manager.cpp -o hospital_manager
     ```
+
 3. Run the program:
     ```bash
     ./hospital_manager
@@ -82,6 +83,7 @@ Additional helper functions are used for searching, recommending doctors, and ma
 ---
 
 ## 📸 Example Workflow
+
 - Add doctors with their visiting hours and specializations
 - Admit patients with details → system recommends relevant doctors
 - View or search existing patients/doctors
@@ -89,6 +91,7 @@ Additional helper functions are used for searching, recommending doctors, and ma
 
 ---
 ## 📌 Future Improvements
+
 - Store data in files (persistence) instead of only in memory
 - Add graphical user interface (GUI)
 - Enhance search with fuzzy matching
@@ -97,7 +100,8 @@ Additional helper functions are used for searching, recommending doctors, and ma
 ---
 
 ## 👨‍💻 Author
-**MD. Abu Hasanat Soykot**
+
+**MD. Abu Hasanat Soykot** <br>
 Undergraduate CSE Student, KUET
 
 ---
