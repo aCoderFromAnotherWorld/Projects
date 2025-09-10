@@ -1,1 +1,267 @@
+Enter Password: 12345
+
+======================================
+----- HOSPITAL MANAGEMENT SYSTEM -----
+======================================
+
+1: Appoint a Doctor
+2: Admit a Patient
+3: Show Details of Doctors
+4: Show Details of Patients
+5: Search Doctors by Speciality
+6: Search Patient by name
+7: Release a Patient
+8: Resign a Doctor
+9: Change Password
+0: Exit
+Enter your choice : 1
+
+------------------------------
+Enter Doctor Name    : Dr. Wahed
+Doctor's Speciality  : Heart
+Starting Time (H,M)  : 10:40 AM
+Ending Time (H,M)    : 2:30 PM
+
+
+Doctor is successfully added
+Press any key to continue . . .
+
+======================================
+----- HOSPITAL MANAGEMENT SYSTEM -----
+======================================
+
+1: Appoint a Doctor
+2: Admit a Patient
+3: Show Details of Doctors
+4: Show Details of Patients
+5: Search Doctors by Speciality
+6: Search Patient by name
+7: Release a Patient
+8: Resign a Doctor
+9: Change Password
+0: Exit
+Enter your choice : 2
+
+------------------------------
+Enter Patient's Name   : Mr. Imran Ali
+Enter Patient's Age    : 25
+Patient's Blood Group  : A+
+Patient's Gender       : M
+Patient's Contact No   : 01745234285 
+Patient's Disease Type : Heart
+
+
+Patient is successfully added
+Press any key to continue . . .
+
+
+======================================
+----- HOSPITAL MANAGEMENT SYSTEM -----
+======================================
+
+1: Appoint a Doctor
+2: Admit a Patient
+3: Show Details of Doctors
+4: Show Details of Patients
+5: Search Doctors by Speciality
+6: Search Patient by name
+7: Release a Patient
+8: Resign a Doctor
+9: Change Password
+0: Exit
+Enter your choice : 3
+
+======================================
+------- DISPLAYING DOCTOR(S) ---------
+
+-----------------------------
+Doctor's ID   : 101
+Name          : Dr. Wahed
+Speciality    : Heart
+
+Visiting Hour : 3:50  Hour
+Visits From 10:40 AM To 2:30 PM
+-----------------------------
+
+
+======================================
+----- HOSPITAL MANAGEMENT SYSTEM -----
+======================================
+
+1: Appoint a Doctor
+2: Admit a Patient
+3: Show Details of Doctors
+4: Show Details of Patients
+5: Search Doctors by Speciality
+6: Search Patient by name
+7: Release a Patient
+8: Resign a Doctor
+9: Change Password
+0: Exit
+Enter your choice : 3
+
+======================================
+------- DISPLAYING PATIENT(S) --------
+
+-----------------------------
+Pateint's ID      : 1
+Pateint's Name    : Mr. Imran Ali
+Pateint's Age     : 25
+Pateint's BG      : A+
+Pateint's Gender  : M
+Pateint's Disease : Heart
+Pateint's Contact : 01745234285
+Recomended Doctor : Dr. Wahed
+-----------------------------
+
+
+======================================
+----- HOSPITAL MANAGEMENT SYSTEM -----
+======================================
+
+1: Appoint a Doctor
+2: Admit a Patient
+3: Show Details of Doctors
+4: Show Details of Patients
+5: Search Doctors by Speciality
+6: Search Patient by name
+7: Release a Patient
+8: Resign a Doctor
+9: Change Password
+0: Exit
+Enter your choice : 5
+Enter Speciality: Heart
+
+
+------------ Details ------------
+
+-----------------------------
+Doctor's ID   : 101
+Name          : Dr. Wahed
+Speciality    : Heart
+
+Visiting Hour : 3:50  Hour
+Visits From 10:40 AM To 2:30 PM
+-----------------------------
+
+
+======================================
+----- HOSPITAL MANAGEMENT SYSTEM -----
+======================================
+
+1: Appoint a Doctor
+2: Admit a Patient
+3: Show Details of Doctors
+4: Show Details of Patients
+5: Search Doctors by Speciality
+6: Search Patient by name
+7: Release a Patient
+8: Resign a Doctor
+9: Change Password
+0: Exit
+Enter your choice : 6
+Enter Name: Mr. Imran Ali
+
+
+
+-------- DISPLAYING DETAILS --------
+-----------------------------
+Pateint's ID      : 1
+Pateint's Name    : Mr. Imran Ali
+Pateint's Age     : 25
+Pateint's BG      : A+
+Pateint's Gender  : M
+Pateint's Disease : Heart
+Pateint's Contact : 01745234285
+Recomended Doctor : Dr. Wahed
+-----------------------------
+
+
+
+
+======================================
+----- HOSPITAL MANAGEMENT SYSTEM -----
+======================================
+
+1: Appoint a Doctor
+2: Admit a Patient
+3: Show Details of Doctors
+4: Show Details of Patients
+5: Search Doctors by Speciality
+6: Search Patient by name
+7: Release a Patient
+8: Resign a Doctor
+9: Change Password
+0: Exit
+Enter your choice : 7
+Enter ID: 1
+
+Patient Mr. Mr. Imran Ali is released.
+
+
+
+======================================
+----- HOSPITAL MANAGEMENT SYSTEM -----
+======================================
+
+1: Appoint a Doctor
+2: Admit a Patient
+3: Show Details of Doctors
+4: Show Details of Patients
+5: Search Doctors by Speciality
+6: Search Patient by name
+7: Release a Patient
+8: Resign a Doctor
+9: Change Password
+0: Exit
+Enter your choice : 8
+Enter ID: 101
+
+Doctor Dr. Wahed is resigned.
+
+
+
+======================================
+----- HOSPITAL MANAGEMENT SYSTEM -----
+======================================
+
+1: Appoint a Doctor
+2: Admit a Patient
+3: Show Details of Doctors
+4: Show Details of Patients
+5: Search Doctors by Speciality
+6: Search Patient by name
+7: Release a Patient
+8: Resign a Doctor
+9: Change Password
+0: Exit
+Enter your choice : 9
+Enter Old Password: 12345
+Enter New Password: 25634536
+
+Password is successfully changed.
+
+
+
+
+======================================
+----- HOSPITAL MANAGEMENT SYSTEM -----
+======================================
+
+1: Appoint a Doctor
+2: Admit a Patient
+3: Show Details of Doctors
+4: Show Details of Patients
+5: Search Doctors by Speciality
+6: Search Patient by name
+7: Release a Patient
+8: Resign a Doctor
+9: Change Password
+0: Exit
+Enter your choice : 0
+
+
+======================================
+------ THANK YOU -------
+
 
